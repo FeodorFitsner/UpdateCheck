@@ -15,7 +15,7 @@ image: Visual Studio 2019
 # scripts that are called at very beginning, before repo cloning
 init:
   - git config --global core.autocrlf input
-  - ps: (New-Object Net.WebClient).DownloadFile("https://dist.nuget.org/win-x86-commandline/v5.8.0/nuget.exe", "$env:SystemDrive\Tools\NuGet\nuget.exe")
+#  - ps: (New-Object Net.WebClient).DownloadFile("https://dist.nuget.org/win-x86-commandline/v5.8.0/nuget.exe", "$env:SystemDrive\Tools\NuGet\nuget.exe")
 
 matrix:
   fast_finish: true     # set this flag to immediately finish build once one of the jobs fails.
